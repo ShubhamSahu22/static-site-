@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Site on AWS Copilot</title>
+    <title>Welcome to My Static Website</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             color: white;
             margin: 0;
             padding: 50px;
@@ -26,15 +26,30 @@
             font-size: 1.5em;
             opacity: 0.9;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
         .container {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        .btn {
+            margin-top: 20px;
+            background: #ff4b2b;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #ff3a1b;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -42,7 +57,9 @@
     <div class="container">
         <h1>Welcome to My Static Website</h1>
         <p>Deployed using AWS Copilot with Nginx</p>
+        <a href="https://aws.amazon.com/copilot/" class="btn">Learn More</a>
     </div>
 </body>
 </html>
+
 
